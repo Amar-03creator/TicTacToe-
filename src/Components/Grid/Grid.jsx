@@ -3,7 +3,7 @@ import Card from "../Card/Card";
 import isWinner from "../../Helpers/CheckWinner";
 import "./Grid.css";
 function Grid ( {numberOfCards} ) {
-    const [board , setBoard] = useState(Array(numberOfCards).fill(""));
+    const [board , setBoard] = useState(Array(numberOfCards).fill(""));  //Array of 9 cards is getting filled with empty string
     const [turn ,setTurn] = useState(true);    //true =? O , false => X
     const [winner , setWinner] = useState(null) ; 
     
